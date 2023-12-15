@@ -35,7 +35,7 @@ lora_target_modules:
   - k_proj
   - o_proj
 
-wandb_project: new_pipeline_test
+#wandb_project: new_pipeline_test
 wandb_entity:
 wandb_watch:
 wandb_log_model:
