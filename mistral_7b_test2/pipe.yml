@@ -1,0 +1,37 @@
+model_identifier: jphme/test_model_digonio
+
+train:
+  enabled: true
+
+eval_adapter:
+  enabled: true
+  wandb: true
+
+merging:
+  enabled: true
+
+eval_merged:
+  enabled: true
+  wandb: true
+  full: true
+  load_8bit: false
+
+quant_gguf:
+  enabled: true
+  formats: Q4_K_S
+
+quant_gptq:
+  enabled: false
+  group_size: 32
+  bits: 4
+  desc_act: 1
+
+eval_gptq:
+  enabled: false
+  wandb: true
+
+upload:
+  merged: true
+  gguf: false
+  gptq: false
+  llama2_license: false
